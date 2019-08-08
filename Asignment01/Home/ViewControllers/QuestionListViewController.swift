@@ -12,7 +12,7 @@ import CoreData
 /// Class QuestionListViewController is used to display the questions based on category selected for taking quiz
 class QuestionListViewController: UIViewController, QuestionListViewDelegate {
     
-    /// Calling QuestionListView in QuestionListViewController
+    /// Calling QuestionListView in QuestionListViewController bb
     var quizCategory: QuizCategory? {
         didSet {
             (self.view as? QuestionListView)?.quizCategory = quizCategory
@@ -22,14 +22,8 @@ class QuestionListViewController: UIViewController, QuestionListViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.view as? QuestionListView)?.delegate = self
-        //// jvojfiovj dfjvokf dvjs dkfvjiofdj vjdfov fdhviojh
-        
-        /*
-        f
-        vdfv
-        fvv
-        dfv
-        */
+        print("github")
+        print("nfbg")
     }
     
     /// ActionOfView protocol method is used to get the selected question and display selected question along with options in questionanswerviewController

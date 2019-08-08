@@ -15,6 +15,7 @@ class QuestionAnswerViewController: UIViewController {
      var questiondata: Question? {
         didSet {
             (self.view as? QuestionAnswerView)?.questiondata = questiondata
+            print("questiondata")
         }
      }
     

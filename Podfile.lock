@@ -1,0 +1,30 @@
+PODS:
+  - InitialsImageView (0.6.0)
+  - Realm (3.17.3):
+    - Realm/Headers (= 3.17.3)
+  - Realm/Headers (3.17.3)
+  - RealmSwift (3.17.3):
+    - Realm (= 3.17.3)
+  - SCLAlertView (0.8)
+
+DEPENDENCIES:
+  - InitialsImageView
+  - RealmSwift
+  - SCLAlertView
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - InitialsImageView
+    - Realm
+    - RealmSwift
+    - SCLAlertView
+
+SPEC CHECKSUMS:
+  InitialsImageView: 09a5a30bdfaad2a8d9bb31b43257ae6ebcc8b52a
+  Realm: 5a1d9d47bfc101dd597668b1a8af4288a2557f6d
+  RealmSwift: b7fdc2d18616621c31df5c7a398a45a2163f8eb0
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
+
+PODFILE CHECKSUM: c20f63691f738ee69139a40a309385d15a54ffa3
+
+COCOAPODS: 1.7.5

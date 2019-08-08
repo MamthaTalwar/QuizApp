@@ -1,0 +1,355 @@
+
+{
+    "quiz": [
+        {
+            "name" : "sports",
+            "list" : [
+                {
+                    "id" : 0,
+                    "question": "Which one is correct team name in NBA?",
+                    "options": [
+                        "New York Bulls",
+                        "Los Angeles Kings",
+                        "Golden State Warriros",
+                        "Huston Rocket"
+                    ],
+                    "answer": "Huston Rocket"
+                },{
+                    "id": 0,
+                    "question": "Which Indian cricketer did the miracle by making a century in 20 balls in T-20 match? ",
+                    "options": [
+                        "Rishabh Pant",
+                        "Shubhmaya Das",
+                        "Riddhiman Saha",
+                        "Hardik Pandya"
+                    ],
+                    "answer": "Riddhiman Saha"
+                },{
+                    "id": 0,
+                    "question": "Which of the following Grand Slam tennis tournaments offers the highest total prize money? ?",
+                    "options": [
+                        "Australion Open",
+                        " French Open ",
+                        " Wimbledon",
+                        "US Open"
+                    ],
+                    "answer": "US Open"
+                },{
+                    "id": 0,
+                    "question": "Who bagged India's first medal at the 21st Commonwealth Games 2018 ?",
+                    "options": [
+                        "Saikhom Mirabai Chanu",
+                        "Virdhawal Khade ",
+                        "Srihari Nataraj",
+                        "Gururaja"
+                    ],
+                    "answer": "Gururaja"
+                },{
+                    "id": 0,
+                    "question": "Which one of the following teems was defeated by India to win the Women's Hockey Asia Cup title, 2017? ",
+                    "options": [
+                        "Japan",
+                        "China",
+                        "South Korea ",
+                        "Pakistan"
+                    ],
+                    "answer": "China"
+                },{
+                    "id": 0,
+                    "question": "Which Cup/Trophy is associated with the game of Hockey?",
+                    "options": [
+                        "Phyanchand Trophy",
+                        "Davis Cup",
+                        "Merdeka Cup ",
+                        "Wimbledon Trophy"
+                    ],
+                    "answer": "Phyanchand Trophy"
+                  }
+            ]
+        }, {
+            "name" : "maths",
+            "list" : [
+                {
+                    "id": 0,
+                    "question": "5 + 7 = ?",
+                    "options": [
+                        "10",
+                        "11",
+                        "12",
+                        "13"
+                    ],
+                    "answer": "12"
+                },{
+                    
+                    "question": "(12 - 8) + 2 = ?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "6"
+                    ],
+                    "answer": "6"
+                },{
+                    
+                    "question": "5 + 8 = ?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "13"
+                    ],
+                    "answer": "13"
+                },{
+                    
+                    "question": "(2 * 2) + 5 = ?",
+                    "options": [
+                        "1",
+                        "2",
+                        "3",
+                        "9"
+                    ],
+                    "answer": "9"
+                },{
+                    
+                    "question": "(5 - 2 ) * 5 = ?",
+                    "options": [
+                        "1",
+                        "2",
+                        "15",
+                        "4"
+                    ],
+                    "answer": "15"
+                },{
+                    
+                    "question": "(12 + 8) / 2 = ?",
+                    "options": [
+                        "10",
+                        "2",
+                        "6",
+                        "4"
+                    ],
+                    "answer": "10"
+                }
+            ]
+        },{
+            "name" : "dance",
+            "list" : [
+                {
+                    "id" : 0,
+                    "question": "Which among the following is a martial dance?",
+                    "options": [
+                        "Kathakali",
+                        "Bamboo dance in Meghalaya",
+                        "Chhau of Mayurbhanj",
+                        "Bhangra of Punjab"
+                    ],
+                    "answer": "Chhau of Mayurbhanj"
+                },{
+                    "id" : 0,
+                    "question": "Which from the following is a Classical dance form?",
+                    "options": [
+                        "Bhangra",
+                        "Bharatanatyam",
+                        "Chhau",
+                        "Wangala"
+                    ],
+                    "answer": "Bharatanatyam"
+                },{
+                    "id" : 0,
+                    "question": "With which of the following dances Raja Reddy is associated with?",
+                    "options": [
+                        "Bharatnatyam",
+                        "Kuchipudi",
+                        "Odissi",
+                        "Kathakali"
+                    ],
+                    "answer": "Kuchipudi"
+                },{
+                    "id" : 0,
+                    "question": "Gidda is a popular folk dance from which state of India?",
+                    "options": [
+                        "Punjab",
+                        "Haryana",
+                        "Uttar Pradesh",
+                        "Uttarakhand"
+                    ],
+                    "answer": "Punjab"
+                },{
+                    "id" : 0,
+                    "question": "Who had popularized the Indian classical dance abroad?",
+                    "options": [
+                        "Kelucharan Mohapatra",
+                        "Rukmani Devi",
+                        "Gopi Krishna",
+                        "Uday Shankar"
+                    ],
+                    "answer": "Uday Shankar"
+                },{
+                    "id" : 0,
+                    "question": "Which among the following is a folk dance of India?",
+                    "options": [
+                        "Manipuri",
+                        "Bihu",
+                        "Kathakali",
+                        "Bharatanatyam"
+                    ],
+                    "answer": "Bihu"
+                }
+            ]
+        },{
+            "name" : "art",
+            "list" : [
+                {
+                    "id" : 0,
+                    "question": "Madhubani a style of folk paintings, is popular in which of the following states in India?",
+                    "options": [
+                        "Bihar",
+                        "Madhya Pradesh",
+                        "West Bengal",
+                        "Rajasthan"
+                    ],
+                    "answer": "Bihar"
+                },{
+                    "id" : 0,
+                    "question": "Warli painting is indigenous to which State?",
+                    "options": [
+                        "Gujarat",
+                        "Rajasthan",
+                        "Odisha",
+                        "Maharashtra"
+                    ],
+                    "answer": "Maharashtra"
+                },{
+                    "id" : 0,
+                    "question": "Nand Lal Bose, Manjit Bawa, Tyeb Mehta are?",
+                    "options": [
+                        "Classical Singers",
+                        "English Poets",
+                        "Photographers",
+                        "Painters"
+                    ],
+                    "answer": "Painters"
+                }
+            ]
+        },{
+            "name" : "technology",
+            "list" : [
+                {
+                    "id" : 0,
+                    "question": "OS computer abbreviation usually means ?",
+                    "options": [
+                        "Order of Significance",
+                        "Open Software",
+                        "Operating System",
+                        "Optical Sensor"
+                    ],
+                    "answer": "Operating System"
+                },{
+                    "id" : 0,
+                    "question": ".MOV extension refers usually to what kind of file?",
+                    "options": [
+                        "Image file",
+                        "Animation/movie file",
+                        "Audio file",
+                        "MS Office document"
+                    ],
+                    "answer": "Animation/movie file"
+                },{
+                    "id" : 0,
+                    "question": "Changing computer language of 1's and 0's to characters that a person can understand is?",
+                    "options": [
+                        "Highlight",
+                        "Clip art",
+                        "Decode",
+                        "Execute"
+                    ],
+                    "answer": "Decode"
+                },{
+                    "id" : 0,
+                    "question": "How many bits is a byte?",
+                    "options": [
+                        "4",
+                        "8",
+                        "16",
+                        "32"
+                    ],
+                    "answer": "8"
+                },{
+                    "id" : 0,
+                    "question": "Blue is what number on the resistor color code?",
+                    "options": [
+                        "4",
+                        "8",
+                        "2",
+                        "6"
+                    ],
+                    "answer": "6"
+                }]
+        },{
+            "name" : "geography",
+            "list" : [
+                {
+                    "id" : 0,
+                    "question": "Guwahati is situated on the banks of river?",
+                    "options": [
+                        "Brahmaputra",
+                        "Ganga",
+                        "Yammuna",
+                        "Godavari"
+                    ],
+                    "answer": "Brahmaputra"
+                }, {
+                    "id" : 0,
+                    "question": "The Gulf of Mannar is situated along the coast which state in India?",
+                    "options": [
+                         "Karnatka",
+                         "Kerala",
+                         "Andhra Pradesh",
+                         "Tamil Nadu"
+                    ],
+                    "answer": "Tamil Nadu"
+                },{
+                    "id" : 0,
+                    "question": " With reference to the climate of India, the western disturbances originate over which one of the following ?",
+                    "options": [
+                        "Arabian Sea",
+                        "Baltic Sea",
+                         "Caspian Sea",
+                         "Mediterranean Sea"
+                    ],
+                    "answer": "Arabian Sea"
+                },{
+                    "id" : 0,
+                    "question": "In the Uttar Pradesh and Madhya Pradesh states, the joint Rajghat River Valley Projectis launched on",
+                    "options": [
+                        "Ken River",
+                         "Son River",
+                         "Chambal River",
+                         "Betwa River"
+                    ],
+                    "answer": "Betwa River"
+                },{
+                    "id" : 0,
+                    "question": "Where is Thattekad Bird Sanctuary located ?",
+                    "options": [
+                        "Kerala",
+                        "Tamil Nadu",
+                        "Karnataka",
+                        "Andhra Pradesh"
+                    ],
+                    "answer": "Kerala"
+                },{
+                    "id" : 0,
+                    "question": "Which one of the following areas of India does not come under the zone of high seismic intensity ?",
+                    "options": [
+                        "Uttarakhand",
+                        "Karnataka Plateau",
+                        "Kachchh",
+                        "Himachal Pradesh"
+                    ],
+                    "answer": "Karnataka Plateau"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-Asignment01/Pods-Asignment01-frameworks.sh
+${BUILT_PRODUCTS_DIR}/InitialsImageView/InitialsImageView.framework
+${BUILT_PRODUCTS_DIR}/Realm/Realm.framework
+${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework

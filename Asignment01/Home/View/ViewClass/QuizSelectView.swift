@@ -35,6 +35,7 @@ class QuizSelectView: UIView {
         super.awakeFromNib()
         collectionViewDelegatesFunc()
         customLayout()
+        print("hi")
     }
     
     /// This function used to set properties for modifying view of collection view

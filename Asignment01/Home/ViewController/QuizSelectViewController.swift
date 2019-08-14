@@ -16,7 +16,6 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
         configureView()
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         (self.view as? QuizSelectView)?.delegate = self
-        addQuizAddition(firstNo: 10,secondNo: 10)
     }
  
      /// Property observer to set the data
@@ -58,11 +57,6 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
         let selectedCategory = quiz?.categories?[selectedIndex.row] else { return }
         questionListPage.quizCategory = selectedCategory
         self.navigationController?.pushViewController(questionListPage, animated: true)
-    }
-    
-    /// This function does not serve any purpose for this controller class. Used for Unit Testing
-    func addQuizAddition(firstNo: Int, secondNo: Int) {
-        let result = firstNo + secondNo
     }
 }
 

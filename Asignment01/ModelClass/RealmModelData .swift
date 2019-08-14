@@ -9,6 +9,7 @@
 import Foundation
 import RealmSwift
 
+/// Realm Model Data
 class Contact: Object {
     @objc dynamic var name: String = ""
     @objc dynamic var number: String = ""

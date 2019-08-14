@@ -12,7 +12,7 @@ class QuestionAnswerView: UIView {
     
     @IBOutlet weak private var tableView: UITableView!
     
-    var questiondata: Question? {
+    var questiondata: QuestionAnswerViewModel? {
         didSet {
             tableView?.reloadData()
         }
@@ -20,10 +20,14 @@ class QuestionAnswerView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        tableViewDelgatesFunc()
+    }
+    
+    /// This function is used to set delegates for TableView
+    private func tableViewDelgatesFunc() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
-       
     }
 }
 
@@ -35,9 +39,7 @@ extension QuestionAnswerView : UITableViewDataSource,UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = questiondata?.options?.count else {
-            return 0
-        }
+        guard let count = questiondata?.displayOptions?.count else { return 0 }
         return count
     }
     
@@ -45,22 +47,19 @@ extension QuestionAnswerView : UITableViewDataSource,UITableViewDelegate {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "ThirdTableViewCell", for: indexPath) as? QuestionAnswerTableViewCell else {
             return UITableViewCell()
         }
-        cell.titleLabel?.text = questiondata?.options?[indexPath.row]
-        cell.separatorInset = UIEdgeInsets.zero
-        cell.layoutMargins = UIEdgeInsets.zero
-        cell.backgroundColor = .clear
+        cell.titleLabel?.text = questiondata?.displayOptions?[indexPath.row]
         cell.selectionStyle = .none
         return cell
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return questiondata?.question
+        return questiondata?.displayQuestion
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
-        let selectedAnswer = questiondata?.options?[indexPath.row]
-        guard let answer = questiondata?.answer else { return  }
+        let selectedAnswer = questiondata?.displayOptions?[indexPath.row]
+        guard let answer = questiondata?.displayAnswer else { return  }
         if selectedAnswer == answer {
             cell?.backgroundColor = UIColor.green
         } else {

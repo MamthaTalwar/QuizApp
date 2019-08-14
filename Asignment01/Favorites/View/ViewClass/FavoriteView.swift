@@ -15,6 +15,11 @@ class FavoriteView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        tableViewDelgatesFunc()
+    }
+    
+    /// This function is used to set delegates for TableView
+    private func tableViewDelgatesFunc() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
@@ -43,7 +48,7 @@ extension FavoriteView: UITableViewDelegate, UITableViewDataSource {
         }
         let savedQuestions = questions[indexPath.row]
         cell.listLabel.text = savedQuestions
-        let imageletter = cell.listLabel.text!
+        guard let imageletter = cell.listLabel.text else { return UITableViewCell() }
         cell.imageFirstLetter.setImageForName(imageletter, backgroundColor: nil, circular: true, textAttributes: nil)
         return cell
     }

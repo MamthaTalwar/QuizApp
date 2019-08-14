@@ -8,14 +8,13 @@
 
 import UIKit
 
-/// Class QuestionAnswerViewController is used to display question along with options based on category selected for quiz
+/// Class QuestionAnswerViewController is used to display question along with options based on category selected for taking quiz
 class QuestionAnswerViewController: UIViewController {
     
-    /// Calling QuestionAnswerView in QuestionAnswerViewController
+     /// Property observer to set the data
      var questiondata: Question? {
         didSet {
             (self.view as? QuestionAnswerView)?.questiondata = questiondata
-            print("questiondata")
         }
      }
     

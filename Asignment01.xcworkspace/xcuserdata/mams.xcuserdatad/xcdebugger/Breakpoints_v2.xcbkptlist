@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asignment01/Contact/View/ContactView.swift"
-            timestampString = "586884235.506938"
+            timestampString = "587371254.600275"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asignment01/Home/Views/QuizSelectView.swift"
-            timestampString = "586936801.77054"
+            timestampString = "587371254.600329"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,23 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asignment01/Home/Views/QuizSelectView.swift"
-            timestampString = "586936801.7705899"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01/Home/Views/QuizSelectView.swift"
-            timestampString = "586936801.7706259"
+            timestampString = "587371254.60037"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -136,32 +120,16 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asignment01/Home/Views/QuizSelectView.swift"
-            timestampString = "586936801.770659"
+            timestampString = "587371254.6004061"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01/Home/Views/QuizSelectView.swift"
-            timestampString = "586936801.770691"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "collectionView(_:didSelectItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.IDETestFailureBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
@@ -171,44 +139,12 @@
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01Test/HomeTest/QuestionListViewControllerTest.swift"
-            timestampString = "586884235.508051"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "testactionOfView()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.IDETestFailureBreakpoint">
          <BreakpointContent
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             breakpointStackSelectionBehavior = "1">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01Test/HomeTest/QuestionListViewControllerTest.swift"
-            timestampString = "586884235.508337"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "testactionOfView()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -218,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Asignment01/Home/ViewControllers/QuestionAnswerViewController.swift"
-            timestampString = "586852493.26587"
+            timestampString = "587371254.60048"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -233,140 +169,14 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-            timestampString = "586884235.50848"
+            filePath = "Asignment01/Home/Views/QuizSelectView.swift"
+            timestampString = "587371254.6005189"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "fetchQuizData()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Asignment01.QuizSelectViewController.(fetchQuizData in _32A523EFC13FD47B6BD958A8FA0AD309)() -&gt; ()"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.07909"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "197">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Asignment01.QuizSelectViewController.(fetchQuizData in _32A523EFC13FD47B6BD958A8FA0AD309)() -&gt; ()"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.081537"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "36"
-                  endingLineNumber = "36"
-                  offsetFromSymbolStart = "367">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-            timestampString = "586884235.5087481"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "fetchQuizData()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-            timestampString = "586884235.5088249"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "quiz"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Asignment01.QuizSelectViewController.quiz.modify : Swift.Optional&lt;Asignment01.Quiz&gt;"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.089829"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Asignment01.QuizSelectViewController.quiz.modify : Swift.Optional&lt;Asignment01.Quiz&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.091351"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "27">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Asignment01.QuizSelectViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Asignment01.QuizSelectViewController"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.093658"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "178">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Asignment01.QuizSelectViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Asignment01.QuizSelectViewController&gt;"
-                  moduleName = "Asignment01"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mams/Desktop/Assigments/Asignment01/Asignment01/Home/ViewControllers/QuizSelectViewController.swift"
-                  timestampString = "586858591.0955729"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "23"
-                  endingLineNumber = "23"
-                  offsetFromSymbolStart = "107">
-               </Location>
-            </Locations>
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "QuizSelectViewDelegate"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

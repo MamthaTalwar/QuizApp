@@ -14,9 +14,12 @@ class NotifyView: UIView {
     @IBOutlet weak var imageTop: UIImageView!
     @IBOutlet weak var notiButtonOutlet: UIButton!
     
-    /// Schedule Notification
+    /// This function is used to Schedule Notification
     @IBAction func allowNotification(_ sender: Any) {
-       
+       notificationFunc()
+    }
+    
+    private func notificationFunc() {
         let center = UNUserNotificationCenter.current()
         center.requestAuthorization(options: [.alert,.sound]) {  (granted,error) in
             if granted {
@@ -42,9 +45,8 @@ class NotifyView: UIView {
         let request = UNNotificationRequest(identifier: uuid, content: content, trigger: trigger)
         
         /// Register
-        center.add(request){ (error) in }   
-        
-  }
+        center.add(request){ (error) in }
+    }
 }
 
 

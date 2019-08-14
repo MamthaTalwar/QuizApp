@@ -8,7 +8,6 @@
 
 import Foundation
 
-/// Model class created using Structure
 /// Quiz Model Class
 struct Quiz {
     var categories: [QuizCategory]?
@@ -18,7 +17,7 @@ struct Quiz {
 }
 
 struct QuizCategory {
-    var name : String?
+    var name: String?
     var questionList: [Question]?
     init(_ dict: Dictionary<String, Any>) {
         self.name = dict["name"] as? String

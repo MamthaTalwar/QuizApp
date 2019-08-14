@@ -23,10 +23,14 @@ class ContactView: UIView {
     
     override func awakeFromNib() {
         realm = try? Realm()
+        tableViewDelegatesFunc()
+    }
+    
+    /// This function is used to set delgates for Tableview
+    private func tableViewDelegatesFunc() {
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
-        
     }
    
     /// addContact function is used to add the new name and contact
@@ -52,7 +56,6 @@ class ContactView: UIView {
             try! self.realm.write {
                 self.realm.add(addNewContact)
                 let indexpath = IndexPath(row: self.addContact.count - 1, section: 0)
-                print("indexpath is \(indexpath)")
                 self.tableView.beginUpdates()
                 self.tableView.insertRows(at: [indexpath], with: .automatic)
                 self.tableView.endUpdates()

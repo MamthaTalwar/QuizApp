@@ -10,7 +10,7 @@ import UIKit
 
 /// Protocol used to selected question to QuestionListViewController
 protocol QuestionListViewDelegate : class {
-    func actionOfView(_ selectedQuestion: Question)
+    func actionOfView(_ selectedIndex: IndexPath)
 }
 
 class QuestionListView: UIView {
@@ -18,7 +18,7 @@ class QuestionListView: UIView {
     @IBOutlet weak private var tableView: UITableView!
     weak var delegate: QuestionListViewDelegate?
     
-    var quizCategory: QuizCategory? {
+    var quizCategory: QuestionListViewModel? {
         didSet {
             tableView?.reloadData()
         }
@@ -26,12 +26,16 @@ class QuestionListView: UIView {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        tableViewDelgatesFunc()
+    }
+    
+    /// This function is used to set delegates for TableView
+    private func tableViewDelgatesFunc() {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableView.automaticDimension
-        
     }
 }
 
@@ -39,8 +43,7 @@ class QuestionListView: UIView {
 extension QuestionListView : UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = quizCategory?.questionList?.count else { return 0 }
-        return count
+        return quizCategory?.displayQuestionList?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,37 +51,34 @@ extension QuestionListView : UITableViewDelegate,UITableViewDataSource {
             return UITableViewCell()
         }
         
-        if let questions = quizCategory?.questionList?[indexPath.row] {
-            cell.labelName?.text = questions.question
+        if let questions = quizCategory?.displayQuestionList?[indexPath.row] {
+            cell.labelName?.text = questions
         }
         cell.questionSave.tag = indexPath.row
         cell.questionSave.addTarget(self, action: #selector(questionSaveButton(_:)), for: .touchUpInside)
         cell.selectionStyle = .none
         cell.accessoryType = .disclosureIndicator
-        cell.tintColor = UIColor.red
         return cell
     }
     
-    /// Tapped question from question list from questionlistView page is saved
+    /// Tapped question from questionlistView page is saved in favoriteViewController
     ///
     /// - Parameter sender: associated question of that button gets saved
-    @objc func questionSaveButton(_ sender: UIButton) {
-        guard let questions = quizCategory?.questionList?[sender.tag], let tappedQuestion = questions.question else { return }
-        CoreDatabaseManager.saveFavoriteData(tappedQuestion) { (success) in
+    @objc func questionSaveButton(_ sender: UIButton) { 
+        guard let questions = quizCategory?.displayQuestionList?[sender.tag] else { return }
+        CoreDatabaseManager.saveFavoriteData(questions) { (success) in
             if success {
-                print("data saved successfully")
-                
+                /// Saved Data successfully
+
             } else {
-                print("There was an error saving data")
+                /// There was an error saving data
             }
         }
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath)
-        guard let questions = quizCategory?.questionList?[indexPath.row] else {  return }
-        delegate?.actionOfView(questions)
+        delegate?.actionOfView(indexPath)
     }
     
     /// To provide dynamic row height for the cell

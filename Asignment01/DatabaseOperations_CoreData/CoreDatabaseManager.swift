@@ -72,6 +72,5 @@ class CoreDatabaseManager {
             completionHandler(false)
         }
     }
-
 }
 

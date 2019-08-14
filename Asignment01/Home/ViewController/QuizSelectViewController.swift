@@ -17,10 +17,9 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
         (self.view as? QuizSelectView)?.delegate = self
         addQuizAddition(firstNo: 10,secondNo: 10)
-        
     }
  
-    /// Calling QuizSelectView in QuizSelectViewController
+     /// Property observer to set the data
     var quiz: Quiz? {
         didSet {
             (self.view as? QuizSelectView)?.quiz = quiz
@@ -32,7 +31,7 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
         fetchQuizData()
     }
     
-    /// This fuction is used for Fetching Quiz Data
+    /// This fuction is used for fetching Quiz Data from example file 
     private func fetchQuizData() {
         DispatchQueue.global(qos: .background).async {
             do {
@@ -54,8 +53,9 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
     /// ActionofView protocol method is used to get the category selected from quizselectviewcontroller and navigate to question list page
     ///
     /// - Parameter selectedCategory: selected category is fetched and navigated to its related question page
-    func actionOfView(_ selectedCategory: QuizCategory) {
-        guard let questionListPage = self.storyboard?.instantiateViewController(withIdentifier: "QuestionListViewController") as? QuestionListViewController else { return }
+    func actionOfView(_ selectedIndex: IndexPath) {
+        guard let questionListPage = self.storyboard?.instantiateViewController(withIdentifier: "QuestionListViewController") as? QuestionListViewController,
+        let selectedCategory = quiz?.categories?[selectedIndex.row] else { return }
         questionListPage.quizCategory = selectedCategory
         self.navigationController?.pushViewController(questionListPage, animated: true)
     }
@@ -63,7 +63,6 @@ class QuizSelectViewController: UIViewController, QuizSelectViewDelegate {
     /// This function does not serve any purpose for this controller class. Used for Unit Testing
     func addQuizAddition(firstNo: Int, secondNo: Int) {
         let result = firstNo + secondNo
-        print("value of two nos is \(result)")
     }
 }
 

@@ -12,25 +12,24 @@ import CoreData
 /// Class QuestionListViewController is used to display the questions based on category selected for taking quiz
 class QuestionListViewController: UIViewController, QuestionListViewDelegate {
     
-    /// Calling QuestionListView in QuestionListViewController bb
+    /// Property observer to set the data
     var quizCategory: QuizCategory? {
         didSet {
             (self.view as? QuestionListView)?.quizCategory = quizCategory
         }
     }
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         (self.view as? QuestionListView)?.delegate = self
-        print("github")
-        print("nfbg")
     }
     
-    /// ActionOfView protocol method is used to get the selected question and display selected question along with options in questionanswerviewController
+    /// ActionOfView protocol method is used to get the selected question and display selected question along with options in questionAnswerViewController
     ///
-    /// - Parameter selectedQuestion: selected question is fetched and navigated to its related question answer page 
-    func actionOfView(_ selectedQuestion: Question) {
-        guard let questionWithOptionPage = self.storyboard?.instantiateViewController(withIdentifier:"QuestionAnswerViewController") as? QuestionAnswerViewController else { return }
+    /// - Parameter selectedQuestion: selected question is fetched and navigated to its related question answer page
+    func actionOfView(_ selectedIndex: IndexPath) {
+        guard let questionWithOptionPage = self.storyboard?.instantiateViewController(withIdentifier:"QuestionAnswerViewController") as? QuestionAnswerViewController,
+        let selectedQuestion = quizCategory?.questionList?[selectedIndex.row] else { return }
         questionWithOptionPage.questiondata = selectedQuestion
         self.navigationController?.pushViewController(questionWithOptionPage, animated: true)
     }

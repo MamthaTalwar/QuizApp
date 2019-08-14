@@ -13,6 +13,8 @@ class QuizHomeCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet private weak var labelName: UILabel!
     @IBOutlet private weak var imageName: UIImageView!
+    let selectCellBorder = 2
+    let deSelectCellBorder = 0.5
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,5 +31,15 @@ class QuizHomeCollectionViewCell: UICollectionViewCell {
     func setData(_ categoryName: String?, image name: String) {
         labelName.text = categoryName
         imageName.image = UIImage(named: name)
+    }
+    
+    func selectBorderCell() {
+        layer.borderColor = UIColor.black.cgColor
+        layer.borderWidth = CGFloat(selectCellBorder)
+    }
+    
+    func deSelectBorderCell() {
+        layer.borderColor = UIColor.lightGray.cgColor
+        layer.borderWidth = CGFloat(deSelectCellBorder)
     }
 }

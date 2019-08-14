@@ -19,8 +19,7 @@ class QuizSelectView: UIView {
     private let images = ["sports", "maths","dance","art","technolgy","geography"]
     weak var delegate: QuizSelectViewDelegate?
     let cellinterSpace  =  5
-    let selectCellBorder = 2
-    let deSelectCellBorder = 0.5
+   
     
     var quiz: QuizSelectViewModel? {
         didSet {
@@ -79,14 +78,12 @@ extension QuizSelectView: UICollectionViewDataSource, UICollectionViewDelegate, 
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.actionOfView(indexPath)
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.black.cgColor
-        cell?.layer.borderWidth = CGFloat(selectCellBorder)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? QuizHomeCollectionViewCell else { return }
+        cell.selectBorderCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-         let cell = collectionView.cellForItem(at: indexPath)
-         cell?.layer.borderColor = UIColor.lightGray.cgColor
-         cell?.layer.borderWidth = CGFloat(deSelectCellBorder)
+        guard let cell = collectionView.cellForItem(at: indexPath) as? QuizHomeCollectionViewCell else { return }
+        cell.deSelectBorderCell()
     }
 }

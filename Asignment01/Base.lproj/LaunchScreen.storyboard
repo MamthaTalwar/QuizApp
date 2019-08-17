@@ -18,19 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qvr-mS-85a">
-                                <rect key="frame" x="175" y="416" width="64" height="64"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="64" id="YpX-DN-7AC"/>
-                                    <constraint firstAttribute="height" constant="64" id="y4D-dQ-pHt"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="q" translatesAutoresizingMaskIntoConstraints="NO" id="dVJ-Jv-ogl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.32369780539999998" green="0.1063579395" blue="0.574860394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Qvr-mS-85a" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4z8-Fg-j7u"/>
-                            <constraint firstItem="Qvr-mS-85a" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kge-XQ-7SJ"/>
+                            <constraint firstItem="dVJ-Jv-ogl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="DSk-Fe-lhv"/>
+                            <constraint firstItem="dVJ-Jv-ogl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Krr-ZO-m9o"/>
+                            <constraint firstAttribute="trailing" secondItem="dVJ-Jv-ogl" secondAttribute="trailing" id="UGA-9q-8SZ"/>
+                            <constraint firstAttribute="bottom" secondItem="dVJ-Jv-ogl" secondAttribute="bottom" id="sqy-wh-5Gj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -41,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchicon.png" width="64" height="64"/>
+        <image name="q" width="450" height="450"/>
     </resources>
 </document>
